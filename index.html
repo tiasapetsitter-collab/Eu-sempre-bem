@@ -1,0 +1,38 @@
+
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pet Sitter Sabrina — Bem-Estar</title>
+    <link rel="manifest" href="manifest.json">
+    <style>
+      body{font-family:sans-serif; background:#ffe6f0; color:#3a0830; text-align:center; padding:20px;}
+      h1{color:#ff6fa3;}
+      button{padding:10px 16px; background:#ff6fa3; color:white; border:none; border-radius:8px; cursor:pointer;}
+      #manual{display:none; text-align:left; background:white; color:#3a0830; padding:16px; border-radius:12px; margin-top:16px;}
+      #manual h2{color:#ff6fa3;}
+      #manual ul{padding-left:20px;}
+    </style>
+  </head>
+  <body>
+    <h1>Pet Sitter Sabrina — Bem-Estar</h1>
+    <p>Seu app de bem-estar está online!</p>
+    <button onclick="document.getElementById('manual').style.display=document.getElementById('manual').style.display==='none'?'block':'none'">Ajuda / Como usar</button>
+    <div id="manual">
+      <h2>Manual Rápido</h2>
+      <ul>
+        <li><b>Check-in de humor:</b> registre seu estado diariamente.</li>
+        <li><b>Rotinas / Ativação:</b> crie pequenas metas ou atividades do dia.</li>
+        <li><b>Reestruturação de pensamentos (TCC):</b> transforme pensamentos negativos em positivos.</li>
+        <li><b>Respiração guiada:</b> prática de relaxamento simples.</li>
+        <li><b>Diário de gratidão:</b> registre coisas boas do dia.</li>
+        <li><b>Progresso / KPIs:</b> acompanhe humor e hábitos.</li>
+        <li><b>Dicas rápidas para pets:</b> lembretes de passeios, carinho e cuidados simples.</li>
+      </ul>
+    </div>
+    <script>
+      if ('serviceWorker' in navigator){navigator.serviceWorker.register('service-worker.js');}
+    </script>
+  </body>
+</html>
